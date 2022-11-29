@@ -1,13 +1,13 @@
 package com.cc.java;
 
 public class App {
-    static Rectangle rectangle = new Rectangle( 10, 10 );
-    static Circle circle = new Circle( 3 );
-    static Triangle triangle = new Triangle( 10, 10 );
     
-    
-    public static void main(String[] args) {
-        Out.o( Out.c( "#y" ) + Out.l( "Flächenberechnung: " ) );
+    public static void main( String[] args ) {
+        Rectangle rectangle = new Rectangle( 10, 10 );
+        Circle circle = new Circle( 3 );
+        Triangle triangle = new Triangle( 10, 10 );
+        
+            Out.o( Out.c( "#y" ) + Out.l( "Flächenberechnung: " ) );
             Out.o( Out.t( 1 ) + Out.c( "#c" ) + "Rechteck: " + Out.c( "#g" ) + rectangle.area() );
             Out.o( Out.t( 1 ) + Out.c( "#c" ) + "Dreieck: " + Out.c( "#g" ) + triangle.area() );
             Out.o( Out.t( 1 ) + Out.c( "#c" ) + "Kreis: " + Out.c( "#g" ) + circle.area() );

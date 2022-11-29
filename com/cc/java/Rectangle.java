@@ -1,15 +1,13 @@
 package com.cc.java;
 
 public class Rectangle extends Shape {
-    private double height, width;
+    private double w, h;
 
-    public Rectangle( double height, double width ) {
-        this.height = height;
-        this.width = width;
+    public Rectangle( double w, double h ) {
+        this.w = w;
+        this.h = h;
     }
 
     @Override
-    public double area() {
-        return height * width;
-    }
+    public double area() { return w * h; }
 }

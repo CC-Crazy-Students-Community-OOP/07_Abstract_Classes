@@ -1,14 +1,12 @@
 package com.cc.java;
 
 public class Circle extends Shape {
-    private double radius;
+    private double r;
 
-    public Circle(double radius) {
-        this.radius = radius;
+    public Circle(double r) {
+        this.r = r;
     }
 
     @Override
-    public double area() {
-        return Math.PI * Math.pow( radius, 2) ;
-    }
+    public double area() { return Math.PI * Math.pow( r, 2) ; }
 }
